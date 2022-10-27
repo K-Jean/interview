@@ -1,0 +1,17 @@
+<header class="p-5 mb-4 bg-light rounded-3">
+  <h1>{{ title }}</h1>
+</header>
+
+<hr />
+
+<div class="row text-center">
+  <ng-container *ngFor="let user of users; let i = index">
+    <ul>
+      <li>{{ user.firstName }}</li>
+      <li>{{ user.lastName }}</li>
+      <li>{{ user.age }}</li>
+      <li>{{ user.email }}</li>
+      <li><button click="successInterview(i)">success</button></li>
+    </ul>
+  </ng-container>
+</div>
